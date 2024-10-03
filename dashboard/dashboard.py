@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the RFM dataset
-rfm_df = pd.read_csv('E:/KULIAHAHAHAH/Studi Independet Bersertifikat (Bangkit)/Dicoding/submission/dashboard/main_data.csv')
+rfm_df = pd.read_csv('main_data.csv')
 
 # Streamlit App
 st.title('E-Commerce RFM Analysis Dashboard')
@@ -23,8 +23,8 @@ monetary_filter = st.sidebar.slider('Monetary (amount)', min_value=float(rfm_df[
 
 # Filter data based on selections
 filtered_rfm = rfm_df[(rfm_df['Recency'] >= recency_filter[0]) & (rfm_df['Recency'] <= recency_filter[1]) &
-                      (rfm_df['Frequency'] >= frequency_filter[0]) & (rfm_df['Frequency'] <= frequency_filter[1]) &
-                      (rfm_df['Monetary'] >= monetary_filter[0]) & (rfm_df['Monetary'] <= monetary_filter[1])]
+                    (rfm_df['Frequency'] >= frequency_filter[0]) & (rfm_df['Frequency'] <= frequency_filter[1]) &
+                    (rfm_df['Monetary'] >= monetary_filter[0]) & (rfm_df['Monetary'] <= monetary_filter[1])]
 
 # Show filtered data
 st.write('Filtered RFM Data:', filtered_rfm)
