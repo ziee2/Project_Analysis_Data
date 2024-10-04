@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Load the RFM dataset
-rfm_df = pd.read_csv('main_data.csv')
+file_path = os.path.join(os.path.dirname(__file__), 'main_data.csv')
+
+with st.spinner('Memuat dataset, harap tunggu...'):
+    rfm_df = pd.read_csv(file_path)
 
 # Streamlit App
 st.title('E-Commerce RFM Analysis Dashboard')
