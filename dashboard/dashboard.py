@@ -50,6 +50,25 @@ plt.ylabel('Total Pendapatan')
 plt.title('Top 10 Kategori Produk Berdasarkan Total Pendapatan')
 st.pyplot(plt)
 
+st.write("""
+Dari hasil analisis penjualan, berikut adalah kesimpulan dari 10 kategori produk dengan pendapatan tertinggi:
+
+1. **beleza_saude** total pendapatan **1.258.681,34**.
+2. **relogios_presentes** total pendapatan **1.205.005,68**. 
+3. **cama_mesa_banho** total pendapatan **1.036.988,68**.
+4. **esporte_lazer** total pendapatan **988.048,97**
+5. **informatica_acessorios** Total Pendapatan **911.954,32**
+6. **moveis_decoracao** total pendapatan **729.762,49**
+7. **cool_stuff** total pendapatan **635290.85**
+8. **utilidades_domesticas** total pendapatan **632248.66**
+9. **automotivo** total pendapatan **592720.11**
+10. **ferramentas_jardim** total pendapatan **485256.46**
+
+Secara keseluruhan, data ini menunjukkan kontributor utama terhadap pendapatan. Kategori diatas ini dapat menjadi fokus utama untuk alokasi sumber daya dan strategi pemasaran di masa mendatang.
+""")
+
+st.write("Dari visualisasi di atas, kita dapat melihat Top 10 kategori produk berdasarkan total pendapatan. yan pertama teradapat 1. belezza_saude")
+
 # Pertanyaan 2: Hubungan antara Review Score dengan Waktu Pengiriman
 st.header('Hubungan Review Score dengan Waktu Pengiriman')
 
